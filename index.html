@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XBaaz - Video Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">X</div>
+                    <span class="logo-text">XBaaz</span>
+                </a>
+
+                <!-- Desktop Search Bar -->
+                <form class="search-form desktop-search" id="searchForm">
+                    <div class="search-input-wrapper">
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            id="searchInput"
+                            placeholder="Search videos..."
+                        >
+                        <button type="submit" class="search-button">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <div class="category-dropdown">
+                        <button class="category-btn">Categories</button>
+                        <div class="dropdown-menu" id="categoryDropdown">
+                            <a href="?category=all" data-category="all">All</a>
+                            <a href="?category=big ass" data-category="big ass">Big Ass</a>
+                            <a href="?category=big boobs" data-category="big boobs">Big Boobs</a>
+                            <a href="?category=blowjob" data-category="blowjob">Blowjob</a>
+                            <a href="?category=desi" data-category="desi">Desi</a>
+                            <a href="?category=fuck" data-category="fuck">Fuck</a>
+                            <a href="?category=girlfriend" data-category="girlfriend">Girlfriend</a>
+                            <a href="?category=horny" data-category="horny">Horny</a>
+                            <a href="?category=mallu" data-category="mallu">Mallu</a>
+                            <a href="?category=punjabi" data-category="punjabi">Punjabi</a>
+                        </div>
+                    </div>
+
+                    <button class="login-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                            <polyline points="10 17 15 12 10 7"></polyline>
+                            <line x1="15" y1="12" x2="3" y2="12"></line>
+                        </svg>
+                        Login
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Search -->
+            <form class="search-form mobile-search" id="mobileSearchForm">
+                <div class="search-input-wrapper">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="mobileSearchInput"
+                        placeholder="Search videos..."
+                    >
+                    <button type="submit" class="search-button">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-categories">
+                    <div class="mobile-cat-title">Categories</div>
+                    <a href="?category=all">All</a>
+                    <a href="?category=big ass">Big Ass</a>
+                    <a href="?category=big boobs">Big Boobs</a>
+                    <a href="?category=blowjob">Blowjob</a>
+                    <a href="?category=desi">Desi</a>
+                    <a href="?category=fuck">Fuck</a>
+                    <a href="?category=girlfriend">Girlfriend</a>
+                    <a href="?category=horny">Horny</a>
+                    <a href="?category=mallu">Mallu</a>
+                    <a href="?category=punjabi">Punjabi</a>
+                </div>
+                <button class="login-btn mobile-login-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                        <polyline points="10 17 15 12 10 7"></polyline>
+                        <line x1="15" y1="12" x2="3" y2="12"></line>
+                    </svg>
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Carousel -->
+            <div class="carousel" id="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="carouselSlide">
+                      <!-- In carousel-slide div, change the img line to: -->
+<img src="./images/2025_10_BeFunky-collage-1-400x223.jpg" alt="Featured Video" class="carousel-image" id="carouselFeaturedImg">
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                            <h2 class="carousel-title" id="carouselTitle">Featured Video</h2>
+                            <button onclick="openVideoModal('exclusive-cute-gf-fucking-blowjob')" class="play-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Play Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-prev" id="carouselPrev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-next" id="carouselNext">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-section">
+                <h2 class="section-title" id="sectionTitle">Browse Videos</h2>
+                <div class="filter-chips" id="filterChips"></div>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos loaded by JavaScript -->
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading" id="loading">Loading videos...</div>
+
+            <!-- No Results State -->
+            <div class="no-results" id="noResults">No videos found.</div>
+
+          <!-- Pagination Section (Load More ki jagah) -->
+<div class="pagination-container" id="paginationContainer">
+    <button class="page-btn prev-btn" id="prevPage" disabled>Previous</button>
+    <div class="page-numbers" id="pageNumbers"></div>
+    <button class="page-btn next-btn" id="nextPage">Next</button>
+    <span class="page-info" id="pageInfo">Page 1 of 1</span>
+</div>
+        </div>
+    </main>
+
+    <!-- Video Modal (for details view) -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            
+            <!-- Video Player -->
+            <div class="video-player-container">
+                <video id="videoPlayer" class="video-player" controls>
+                    <source src="/placeholder.svg" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Video Info -->
+            <div class="video-info">
+                <h1 id="videoTitle" class="video-title"></h1>
+                
+                <div class="video-stats">
+                    <span class="stat">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        <span id="videoViews">0</span> views
+                    </span>
+                    <span class="stat">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                        90%
+                    </span>
+                </div>
+
+                <!-- Categories -->
+                <div class="video-categories" id="videoCategories"></div>
+
+                <!-- Related Videos -->
+                <h3 class="related-title">Related Videos</h3>
+                <div class="related-videos" id="relatedVideos"></div>
+
+                <!-- Comments Section -->
+                <div class="comments-section">
+                    <h3 class="comments-title">Comments</h3>
+                    <div class="comments-list" id="commentsList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
